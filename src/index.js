@@ -6,13 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { userLists, LoginUsers } from './Api/redux-manager/reducers';
+import { userLists } from './Api/redux-manager/reducers';
 import { persistStore, persistReducer } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
  
 
-const rootReducers = combineReducers({ LoginUsers, userLists })
+const rootReducers = combineReducers({ userLists })
 
 const persistConfig = {
   key: 'root',

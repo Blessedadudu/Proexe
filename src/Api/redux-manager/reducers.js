@@ -3,7 +3,7 @@ import { ADD_TO_LIST, REMOVE_FROM_LIST, CLEAR_ALL_LIST, ADD_NEW_LIST } from './c
 
   const initialStateList = {
     items: [],
-    reload: false
+    reload: true
   }
   
   export const userLists = ( state = initialStateList, action) => {
@@ -29,15 +29,5 @@ import { ADD_TO_LIST, REMOVE_FROM_LIST, CLEAR_ALL_LIST, ADD_NEW_LIST } from './c
 
     return state;
   }
-
-  const initialLoginState = {
-    login: false
-  }
-
-  export const LoginUsers = (state=initialLoginState, action={}) => {
-   
-    return state
-  }
-
 
 

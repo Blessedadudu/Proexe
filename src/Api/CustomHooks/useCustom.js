@@ -69,6 +69,7 @@ const useCustom = () => {
         }
     }, [dispatch])
 
+
     useEffect(() => {
         (PersistedLists.items.length === 0 && PersistedLists.reload ) ?  getAllUserLists() : setUserLists(PersistedLists.items);
     }, [PersistedLists.items, PersistedLists.reload, getAllUserLists]);
