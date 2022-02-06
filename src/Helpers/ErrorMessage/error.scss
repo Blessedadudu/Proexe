@@ -1,0 +1,33 @@
+.root {
+    margin-top:-9px
+}
+
+.icon--error {
+    // padding-top: -2rem;
+   // transform: translateY(-2rem)
+
+   div {
+       transform: translateY(3px);
+   }
+}
+
+.error--input {
+    border: 2px solid red; 
+
+    &:focus {
+        border: 2px solid red;
+    }
+}
+
+.error--icon {
+    color: red;
+    font-size: 14px;
+    margin-top: .7rem;
+}
+
+.error--both {
+    font-size: 14px;
+    white-space: pre-wrap;
+    color: red;
+    padding: .7rem .5rem 0;
+}

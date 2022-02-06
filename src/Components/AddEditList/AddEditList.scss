@@ -1,0 +1,69 @@
+.mainAddEdit {
+    background-color: rgba(141, 141, 141, 0.5);
+    z-index: 1;
+
+
+
+    .addEdit {
+        background-color: white;
+        width: 70%;
+        margin: 0 auto;
+        color: black;
+        padding: 2rem;
+        border-radius: 10px;
+        align-items: center;
+        
+        h1 {
+            padding: 1rem 0 .5rem;
+            text-align: center;
+            font-size: 26px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+            margin-bottom: 1rem;
+        }
+
+        .grid--label {
+            margin: 2rem 0;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            label {
+                margin-bottom: 0;
+            }
+
+            input {
+                border-radius: 4px;
+            }
+
+        }
+
+        button {
+            background-color: rgb(96, 201, 64);
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+            width: 150px;
+            font-size: 14px;
+            transition: all .2s ease-in;
+            position: relative;
+            left: -10px;
+            top: -2px;
+            transition: all .2s ease-in;
+            text-align: center;
+            margin: 0 auto;
+            
+            &:hover {
+                background-color: rgb(53, 163, 43);
+            }
+        }
+    }
+
+    .error-input {
+        border: 2px solid red;
+    
+        &:focus {
+            border: 2px solid red;
+        }
+    }
+    
+}

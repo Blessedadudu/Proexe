@@ -1,0 +1,104 @@
+.dashboard {
+    margin: .5rem 4rem 4rem;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    
+    .table-responsive {
+        max-width: 90%;
+        min-width: 60%;
+    }
+    
+    .table {
+        border: 1px solid rgb(224, 214, 214);
+        background-color: rgb(255, 255, 255);
+        margin: 1rem 0;
+
+        %buttons {
+            background-color: rgb(250, 213, 51);
+            color: white;
+            height: 30px;
+            border-radius: 5px;
+            width: 70px;
+            font-size: 14px;
+            transition: all .2s ease-in;
+            position: relative;
+            left: -10px;
+            top: -2px;
+            transition: all .1s ease-in;
+            
+            &:hover {
+                background-color: rgb(241, 203, 31);
+            }
+        }
+
+        .edit-button {
+           @extend %buttons;
+        }
+        
+        .del-button {
+           @extend %buttons;
+           background-color: rgb(247, 75, 63);
+           
+           
+           &:hover {
+                background-color: rgb(204, 43, 32);
+            }
+        }
+    }
+    
+    .heading--button {
+        justify-content: space-between;
+        width: 90%;
+        margin: 1rem 0;
+        border-bottom: 1px solid rgb(216, 213, 213);
+        padding-bottom: 1rem;
+
+        h3 {
+            margin: 0;
+        }
+
+        button {
+            background-color: rgb(73, 73, 248);
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+            width: 100px;
+            font-size: 14px;
+            transition: all .2s ease-in;
+            
+            &:hover {
+                background-color: rgb(28, 28, 245);
+            }
+
+        }
+        
+        .reset {
+            background-color: rgb(88, 214, 38);
+
+            &:hover {
+                background-color: rgb(91, 209, 44);
+            }
+
+        }
+
+    }
+
+    .no-data {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        font-size: 22px;
+        margin: 2rem 0;
+        padding-top: 2rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.main--heading {
+    padding: 4rem 4rem 0;
+}
